@@ -1,12 +1,154 @@
 /* General page styling */
 body {
+    font-family: 'Playfair Display', serif;
+    background-color: #fff0f5;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0 0 10px;
+    color: #c2185b;
+    font-family: 'Playfair Display', serif;
+}
+/* Header section styling */
+header {
+    background: #ffb6c1;
+    color: #c2185b;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* for team logo image */
+.team-logo {
+    width: 150px;
+    margin-top: 10px;
+}
+
+/* Menu button  */
+header nav {
+    margin-top: 10px;
+}
+
+header nav button {
+    background: #ff8fab;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+header nav button:hover {
+    background: #c2185b;
+}
+
+/* team bios and vision sections */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*individual team bios */
+.card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(255, 143, 171, 0.3);
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(30% - 40px);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    margin: 0 0 10px;
+    color: #c2185b;
+    font-family: 'Georgia', serif;
+}
+
+
+.bio {
+    display: none;
+    margin-top: 10px;
+    color: #5a3a3a;
+}
+
+/* Buttons */
+button {
+    background: #ffb6c1; /* changed from #007BFF */
+    color: #c2185b; /* changed from white */
+    border: 2px solid #ff8fab; /* added border */
+    padding: 10px 15px;
+    border-radius: 25px; /* changed from 5px */
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff8fab; /* changed from #0056b3 */
+    color: white; /* added */
+}
+
+/* Card image sizing */
+.card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 4px solid #ffb6c1; /* added pink border */
+}
+
+/* ===== RAKI'S CARD ===== */
+.raki-card {
+    background: linear-gradient(135deg, #fff0f5, #ffe4ef);
+    border: 2px solid #ffb6c1;
+}
+
+/* ===== RAKI'S MOODBOARD ===== */
+.moodboard h3 {
+    color: #c2185b;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.moodboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.moodboard-item img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #ffb6c1;
+    transition: transform 0.3s ease;
+}
+
+.moodboard-item img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(255, 143, 171, 0.6);
+}
+/* * General page styling
+body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
-/* Header section styling */
+* Header section styling *
 header {
     background: #333;
     color: #fff;
@@ -14,13 +156,13 @@ header {
     text-align: center;
 }
 
-/* Styling for team logo image */
+/* Styling for team logo image
 .team-logo {
-    width: 150px; /* Adjust the size as needed */
+    width: 150px; /* Adjust the size as needed *
     margin-top: 10px;
 }
 
-/* Menu button styling */
+/* Menu button styling *
 header nav {
     margin-top: 10px;
 }
@@ -39,7 +181,7 @@ header nav button:hover {
     background: #0056b3;
 }
 
-/* Flex container for team bios and vision sections */
+/* Flex container for team bios and vision sections *
 .container {
     width: 80%;
     margin: 20px auto;
@@ -48,7 +190,7 @@ header nav button:hover {
     justify-content: space-between;
 }
 
-/* Card styling for individual team bios */
+/* Card styling for individual team bios *
 .card {
     background: white;
     border-radius: 8px;
@@ -68,14 +210,14 @@ h2 {
     margin: 0 0 10px;
 }
 
-/* Initially hide bio details */
+/* Initially hide bio details *
 .bio {
     display: none;
     margin-top: 10px;
     color: #555;
 }
 
-/* Button styling */
+/* Button styling *
 button {
     background: #007BFF;
     color: white;
@@ -88,59 +230,14 @@ button {
 button:hover {
     background: #0056b3;
 }
-/* ZAINA BIO */
-
-.card img[alt="Zaina"] {
-
-    width: 130px;
-
-    height: 130px;
-
+/* card image sizing zaina *
+.card img {
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-
     border-radius: 50%;
-
     margin-top: 10px;
-
-    border: 3px solid #ff69b4; /* pink accent */
-
 }
-
-.moodboard {
-
-    display: flex;
-
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    margin-top: 15px;
-
-}
-
-
-
-.moodboard img {
-
-    width: 85px;
-
-    height: 85px;
-
-    object-fit: cover;
-
-    margin: 6px;
-
-    border-radius: 10px;
-
-    border: 2px solid #ff69b4;
-
-    transition: transform 0.2s;
-
-}
-
-
-.moodboard img:hover {
-
-    transform: scale(1.15);
+*/nsform: scale(1.15);
 
 }
